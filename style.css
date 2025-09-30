@@ -38,6 +38,7 @@ nav {
     align-items: center;
     padding: 0 2rem;
     font-size: 1.2rem;
+    position: relative; /* needed for absolute dropdown */
 }
 
 .nav-links {
@@ -156,15 +157,31 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 3.5rem;
+        right: -100%;
+        flex-direction: column;
+        background-color: black;
+        width: 200px;
+        padding: 1rem;
+        gap: 1rem;
+        transition: right 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        right: 0; /* slides into view */
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
 @media (max-width: 480px) {
     .name {
         font-size: 1.5rem;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
     }
 
     .hero-text h1 {
