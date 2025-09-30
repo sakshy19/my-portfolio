@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Hey there! 👋</h1>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- About Section -->
+        <section class="about-section">
+            <!-- Profile Picture -->
+            <div class="profile-pic">
+                <img src="images/g1.jpg" alt="Sakshi Sahu">
+            </div>
+
+            <!-- About Text -->
+            <div class="about-text">
+                <p>
+                    I am <strong>Sakshi Sahu</strong>, pursuing my B.Tech degree in Computer Science and Engineering from 
+                    <strong>Samrat Ashoka Technological Institute (SATI), Vidisha</strong>.  
+                    I have a strong foundation in <strong>frontend development</strong> and a growing interest in mastering 
+                    <strong>backend technologies</strong> to become a <strong>full-stack developer</strong>.  
+                    With a passion for learning, problem-solving, and building efficient solutions, I am eager to explore 
+                    opportunities that allow me to enhance my skills, gain practical knowledge, and contribute to innovative projects.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact / Message Section -->
+        <section class="contact-section">
+            <h2>Want to know more? Drop a message 👇</h2>
+            
+            <textarea id="message" rows="6" placeholder="Write your message here..."></textarea>
+<button onclick="sendEmail()">Send Message</button>
+
+<script>
+function sendEmail() {
+    let message = document.getElementById("message").value;
+    if(message.trim() === "") {
+        alert("Please write a message first!");
+        return;
+    }
+    window.location.href = "mailto:sakshisahu753@gmail.com?subject=Message from Portfolio&body=" + encodeURIComponent(message);
+}
+</script>
+
+            
+        </section>
+
+    </main>
+
+</body>
+</html>
