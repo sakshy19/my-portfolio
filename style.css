@@ -194,10 +194,18 @@ footer {
         font-size: 1.5rem;
     }
 
-    nav {
-    flex-direction: row;         /* ✅ Keep items in a row */
-    justify-content: space-between;  /* ✅ Push logo left, toggle right */
+    
+     nav {
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+  }
+
+  .menu-toggle {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: block;
   }
 
     .hero-text h1 {
@@ -212,5 +220,6 @@ footer {
         width: 80%;
     }
 }
+
 
 
