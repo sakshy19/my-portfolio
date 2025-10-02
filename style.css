@@ -60,6 +60,7 @@ nav {
   display: none;
   font-size: 2rem;
   cursor: pointer;
+    text-align:end;
 }
 
 /* Mobile view */
@@ -211,3 +212,4 @@ footer {
         width: 80%;
     }
 }
+
