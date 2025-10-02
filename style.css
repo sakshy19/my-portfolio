@@ -195,10 +195,10 @@ footer {
     }
 
     nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
+    flex-direction: row;         /* ✅ Keep items in a row */
+    justify-content: space-between;  /* ✅ Push logo left, toggle right */
+    align-items: center;
+  }
 
     .hero-text h1 {
         font-size: 2rem;
@@ -212,4 +212,5 @@ footer {
         width: 80%;
     }
 }
+
 
